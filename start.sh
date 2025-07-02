@@ -26,7 +26,7 @@ fi
 LT_ARGS=(
   -cp languagetool-server.jar
   org.languagetool.server.HTTPServer
-  --port 8010
+  --port "${PORT:-8080}"
   --public
   --allow-origin '*'
   --config config.properties
